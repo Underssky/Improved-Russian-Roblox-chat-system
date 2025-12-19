@@ -159,7 +159,7 @@ sendButton.MouseButton1Click:Connect(sendMessage)
 UserInputService.InputBegan:Connect(function(input, gameProcessed)
 if gameProcessed then return end
 ;
-if input.KeyCode == Enum.KeyCode.Slash then
+if input.KeyCode == Enum.KeyCode.Semicolon then
 msgboxinit:CaptureFocus()
 end
 end)
@@ -178,6 +178,7 @@ task.spawn(SCRIPT_3)
 local function SCRIPT_4()
 local script = UI["4"]
 warn("⨌⨌⨌ CLear on focus is true, click the button below the chat box to change it.")
+warn("⨌⨌⨌ Press ; to focus the chat box, and Enter to send msg.")
 script:Destroy()
 end
 task.spawn(SCRIPT_4)
